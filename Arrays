@@ -1,0 +1,21 @@
+package Arrays;
+
+import java.util.Scanner;
+
+public class Array72 {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+int size =  sc.nextInt();
+        int [] arr = new int[size];
+        for (int j = 0; j<=arr.length-1;j++){
+            arr[j]= sc.nextInt();
+        }
+        int sum = 0;
+        for (int i=0;i<=arr.length-1;i++){
+            sum +=arr[i];
+            if (i<arr.length-1)
+            System.out.print(arr[i] + " + ");
+        }
+        System.out.println(arr[arr.length-1] + " = " + sum);
+    }
+}
