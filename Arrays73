@@ -1,0 +1,20 @@
+package Arrays;
+
+import java.util.Scanner;
+
+public class Arrays73 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int[] arr = new int[size];
+        for (int j = 0; j <= arr.length - 1; j++) {
+            arr[j] = sc.nextInt();
+        }
+        double sum = 0;
+        for (int i = 0; i <= arr.length - 1; i++) {
+            sum += arr[i];
+        }
+        sum = sum / size;
+        System.out.println(sum);
+    }
+}
